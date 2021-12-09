@@ -32,11 +32,11 @@ const Home = () => {
       </div>
       <div className="col-md-8">
         <Status />
-
+        
         {homePosts.loading ? (
           <img src={LoadIcon} alt="loading" className="d-block mx-auto" />
         ) : homePosts.result === 0 && homePosts.posts.length === 0 ? (
-          <h2 className="text-center">No Post</h2>
+          <h5 className="text-center" style={{ color: "seagreen" }}> The feed is currently empty. </h5>
         ) : (
           <Posts />
         )}
