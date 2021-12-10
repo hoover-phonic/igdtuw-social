@@ -13,6 +13,14 @@ const Loading = () => {
       }}
     >
       <svg width="205" height="250" viewBox="0 0 40 50">
+        <circle
+          stroke="#007500"
+          strokeWidth="1"
+          fill="none"
+          cx="20"
+          cy="20"
+          r="20"
+        />
         {/* <polygon
           stroke="#fff"
           strokeWidth="1"

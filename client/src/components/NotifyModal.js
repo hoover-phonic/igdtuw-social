@@ -36,9 +36,9 @@ const NotifyModal = () => {
   };
 
   return (
-    <div style={{ minWidth: "300px" }}>
+    <div style={{ minWidth: "300px", background: "#84E184" }}>
       <div className="d-flex justify-content-between align-items-center px-3">
-        <h3>Notification</h3>
+        <h4>Notifications</h4>
         {notify.sound ? (
           <i
             className="fas fa-bell text-danger"
