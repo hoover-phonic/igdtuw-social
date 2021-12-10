@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema(
   {
@@ -28,26 +28,25 @@ const userSchema = new mongoose.Schema(
     avatar: {
       type: String,
       // default: 'https://res.cloudinary.com/devatchannel/image/upload/v1602752402/avatar/avatar_cugq40.png'
-      default:
-        "https://res.cloudinary.com/dviiqxiog/image/upload/v1639022260/igram/female_avatar_hqhkma.png",
+      default: 'https://res.cloudinary.com/dviiqxiog/image/upload/v1639022260/igram/female_avatar_hqhkma.png',
     },
-    role: { type: String, default: "user" },
-    gender: { type: String, default: "male" },
-    mobile: { type: String, default: "" },
-    address: { type: String, default: "" },
+    role: { type: String, default: 'user' },
+    gender: { type: String, default: 'female' },
+    mobile: { type: String, default: '' },
+    address: { type: String, default: '' },
     story: {
       type: String,
-      default: "",
+      default: '',
       maxlength: 200,
     },
-    website: { type: String, default: "" },
-    followers: [{ type: mongoose.Types.ObjectId, ref: "user" }],
-    following: [{ type: mongoose.Types.ObjectId, ref: "user" }],
-    saved: [{ type: mongoose.Types.ObjectId, ref: "user" }],
+    website: { type: String, default: '' },
+    followers: [{ type: mongoose.Types.ObjectId, ref: 'user' }],
+    following: [{ type: mongoose.Types.ObjectId, ref: 'user' }],
+    saved: [{ type: mongoose.Types.ObjectId, ref: 'user' }],
   },
   {
     timestamps: true,
   }
 );
 
-module.exports = mongoose.model("user", userSchema);
+module.exports = mongoose.model('user', userSchema);
