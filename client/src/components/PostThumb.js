@@ -8,8 +8,11 @@ const PostThumb = ({ posts, result }) => {
 
   if (result === 0)
     return (
-      <h5 className="text-center" style={{ color: "seagreen" }}>
-        You haven't bookmarked any posts yet
+      <h5
+        className="text-center"
+        style={{ color: "seagreen", "padding-top": "40px" }}
+      >
+        There aren't any posts to show yet.
       </h5>
     );
 
